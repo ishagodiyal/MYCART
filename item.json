@@ -1,0 +1,50 @@
+[
+    {
+        "id":1,
+        "Name":"Home decor statue",
+        "Price":"RS 1000",
+        "image":"images/statue.png"
+    },
+    {
+        "id":2,
+        "Name":"Comfertable big chair",
+        "Price":"RS 3000",
+        "image":"images/chair (1).png"
+    },
+    {
+        "id":3,
+        "Name":"slider chair",
+        "Price":"RS 2500",
+        "image":"images/chair (2).png"
+    },
+    {
+        "id":4,
+        "Name":"A new launch acne tube",
+        "Price":"RS 3000",
+        "image":"images/cosmetic.png"
+    },
+    {
+        "id":5,
+        "Name":"Pencil heels ",
+        "Price":"RS 2000",
+        "image":"images/shoe.png"
+    },
+    {
+        "id":6,
+        "Name":"Bike for adults",
+        "Price":"RS 10000",
+        "image":"images/bike.png"
+    },
+    {
+        "id":7,
+        "Name":"Money Bank",
+        "Price": "Rs 1000",
+        "image":"images/box.png"
+    },
+    {
+        "id":8,
+        "Name":"Expensive bracelet for womens",
+        "Price":"RS 900",
+        "image":"images/bracelet.png"
+    }
+]

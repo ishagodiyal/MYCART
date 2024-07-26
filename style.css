@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    background-color:#eee;
+    
+}
+.title{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.allinone {
+    width: 900px;
+    margin: auto;
+    text-align: center;
+    max-width: 90vw;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.cartfont {
+    position: relative;
+    cursor: pointer;
+}
+
+.cartfont span {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: -35%;
+}
+
+.list .item img {
+    filter: drop-shadow(0 50px 20px #0009);
+    width: 90%;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.list .item {
+    background-color:hsl(60, 12%, 58%);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: large;
+}
+
+.list button {
+    background-color: #353435;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.CartTab {
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+body.showCart .CartTab{
+    right: 0;
+}
+body.showCart .allinone{
+    transform: translateX(-250px);
+}
+.CartTab h1 {
+    padding: 21px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.CartTab .btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.CartTab .btn button {
+    background-color: red;
+    font-weight: bold;
+    font-family: Poppins, sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+.CartTab .btn .close {
+    background-color: #eee;
+}
+
+.CartTab .innerCart img {
+    width: 90px;
+}
+
+.CartTab .innerCart .item {
+    display: grid;
+    grid-template-columns: 70px 120px 50px 1fr;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.innerCart .quantity span {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #555;
+    cursor: pointer;
+    font-weight: 800;
+    text-align: center;
+}
+
+.innerCart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+}
+
+.innerCart {
+    overflow: auto;
+}
+.innerCart::-webkit-scrollbar{
+    width: 0;
+}
